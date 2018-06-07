@@ -2,23 +2,41 @@
 
 <view>
   <view>
-    <image style="width: 100%; height: 180px; background-color: #fff;" mode="aspectFit" src="../../imgs/header.png"></image>
+    <image style="width: 100%; height:215px; background-color: #fff;" mode="aspectFit" src="../../imgs/header.png"></image>
 
   </view>
 
 
-  <view style="padding:20rpx;">
+  <!-- <view style="padding:20rpx;display:flex; flex-direction: row;align-items:center;">
+    <text style='font-size:16px;  '>查找座位</text>
     <view style='border: 1px solid #eee; border-radius:10rpx; margin-bottom:10rpx;'>
-      <input style="display:flex;justify-content:center;font-size: 16px" placeholder="输入姓名或手机号" bind:change="editInput">
+      <input style=" height: 80rpx; font-size: 16px; " placeholder="输入手机号或姓名" bind:change="editInput">
       </input>
     </view>
+  </view> -->
 
-    <view style="background-color: #FF534D; height: 60rpx;display:flex; justify-content: center; border-radius:10rpx; " bindtap='getSeat'>
+  <view style='padding:20rpx;'>
+    <view class="weui-cells weui-cells_after-title">
+
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">手机号/姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入手机号或姓名" bind:change="editInput" />
+        </view>
+      </view>
+    </view>
+
+    <view style="background-color: #FF534D; height: 80rpx;display:flex; justify-content: center; align-items:center; border-radius:10rpx;margin-top:10rpx; " bindtap='getSeat'>
       <text style='color: #fff'>查询座位</text>
     </view>
   </view>
 
-  <view style='padding:20px;font-size:12px;font-color:#888;'>
+
+  <view style='padding:20rpx;font-size:12px;font-color:#222;'>
+    <text style='font-size:16px; display:flex; justify-content: center; color:#aaa;'>会议议程</text>
+    <image style="width: 100%; background-color: #fff;" mode="widthFix" src="http://lc-i2qdmx96.cn-n1.lcfile.com/db92f248f52d8c02eead.png"></image>
     <text>友情提醒：U净运营商大会参会客户可使用该小程序进行会议座位及晚宴座位等参会信息的查询，如会议现场需要帮助请电话联系：18168891605（小薄）</text>
   </view>
 
